@@ -35,11 +35,12 @@ YouTube Video Fetcher, belirli bir YouTube kanalından videoları çekip bir yaz
 
 Eklentiyi yapılandırmak için `yvf_fetch_videos` fonksiyonunda `APIKEY` ve `CHANNELID` değişkenlerini kendi YouTube API anahtarınız ve kanal kimliğiniz ile değiştirin.
 
-Bu eklenti ile BlackVideo wordpress teması birlikte kullanıldığında belirli bir youtube sayfasındaki videolar, youtube'a oldukça benzer şekilde web siteye dönüşmektedir. 
-Kategori numarasına göre istenilen kategorilerde yükleme yapılabilir.
 
-```php
+```
+php
 $api_key = 'APIKEY';
 $channel_id = 'CHANNELID';
+```
 
-Eklenti, varsayılan olarak her 30 dakikada bir çalışacak şekilde ayarlanmıştır. Bu zamanlama ayarını yvf_add_half_hourly_cron_schedule fonksiyonunda değiştirebilirsiniz.
+Bu eklenti ile BlackVideo wordpress teması birlikte kullanıldığında belirli bir youtube sayfasındaki videolar, youtube'a oldukça benzer şekilde web siteye dönüşmektedir. 
+Kategori numarasına göre istenilen kategorilerde yükleme yapılabilir.
