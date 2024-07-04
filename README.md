@@ -13,7 +13,7 @@ YouTube Video Fetcher, belirli bir YouTube kanalından videoları çekip bir yaz
 
 1. Bu repository'i indirin veya klonlayın:
     ```sh
-    git clone https://github.com/username/repo.git
+    git clone https://github.com/username/repo.git](https://github.com/cinarci/youtube-fetcher-extension
     ```
 
 2. Dosyaları WordPress eklentiler klasörünüze yükleyin:
