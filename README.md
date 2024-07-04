@@ -36,8 +36,7 @@ YouTube Video Fetcher, belirli bir YouTube kanalından videoları çekip bir yaz
 Eklentiyi yapılandırmak için `yvf_fetch_videos` fonksiyonunda `APIKEY` ve `CHANNELID` değişkenlerini kendi YouTube API anahtarınız ve kanal kimliğiniz ile değiştirin.
 
 
-```
-php
+```php
 $api_key = 'APIKEY';
 $channel_id = 'CHANNELID';
 ```
