@@ -5,10 +5,11 @@ Description: Fetches videos from a specific YouTube channel and embeds them in a
 Version: 1.2
 Author: Adem ÇINARCI
 */
+
 add_filter('cron_schedules', 'yvf_add_half_hourly_cron_schedule');
 function yvf_add_half_hourly_cron_schedule($schedules) {
     $schedules['half_hourly'] = array(
-        'interval' => 1800, // 1800 saniye = 30 dakika
+        'interval' => 1800, // 1800 seconds = 30 minutes
         'display' => __('Every Half Hour')
     );
     return $schedules;
@@ -77,16 +78,14 @@ function yvf_fetch_videos() {
                 ));
 
                 add_post_meta($post_id, 'yvf_video_id', $video_id, true);
-
-                
                 yvf_set_post_thumbnail($post_id, $thumbnail_url);
+            } else {
             }
         }
     }
 }
 
 function yvf_set_post_thumbnail($post_id, $thumbnail_url) {
-    
     $image = wp_remote_get($thumbnail_url);
 
     if (is_wp_error($image)) {
